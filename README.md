@@ -11,7 +11,6 @@
 
 **Transforming ecommerce revenue data into strategic business insights using Power BI & DAX**
 
-[📊 View Dashboard](#-dashboard-preview) • [🔍 Key Insights](#-key-insights-business-ready) • [💡 Recommendations](#-recommendations)
 
 </div>
 

@@ -249,6 +249,7 @@ amazon-revenue-performance-analysis/
 
 **Sangamesh Dadge**
 
+![Portfolio](https://img.shields.io/badge/Portfolio-Visit-orange?style=for-the-badge&logo=google-chrome&logoColor=white)
 [![Email](https://img.shields.io/badge/Email-sangameshdadge2003%40gmail.com-red?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sangameshdadge2003@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/sangamesh-dadge-736050251/)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-black?style=for-the-badge&logo=github)](https://github.com/sangamesh-Analytics)

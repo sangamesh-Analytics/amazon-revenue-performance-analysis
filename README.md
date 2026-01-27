@@ -1,12 +1,17 @@
-# 📦 Amazon Revenue Performance Analysis (2020–2024)
-
 <div align="center">
 
-![Project Status](https://img.shields.io/badge/Status-Complete-success)
-![Power BI](https://img.shields.io/badge/Power_BI-F2C811?logo=powerbi&logoColor=black)
-![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+# 📦 Amazon Revenue Performance Analysis
+### *2020–2024*
 
-*Transforming quarterly sales data into strategic business insights for e-commerce growth*
+![Status](https://img.shields.io/badge/Status-Complete-success)
+![Power BI](https://img.shields.io/badge/Tool-Power%20BI-F2C811?logo=powerbi&logoColor=black)
+![DAX](https://img.shields.io/badge/Skill-DAX-blue)
+![Python](https://img.shields.io/badge/Skill-Python-3776AB?logo=python&logoColor=white)
+![Excel](https://img.shields.io/badge/Skill-Excel-217346?logo=microsoft-excel&logoColor=white)
+
+**Transforming ecommerce revenue data into strategic business insights using Power BI & DAX**
+
+[📊 View Dashboard](#-dashboard-preview) • [🔍 Key Insights](#-key-insights-business-ready) • [💡 Recommendations](#-recommendations)
 
 </div>
 
@@ -14,474 +19,256 @@
 
 ## 📌 Project Overview
 
-This comprehensive revenue performance analysis examines Amazon's sales patterns across a 4-year period (2020–2024), delivering actionable insights into revenue trends, category performance, and growth dynamics. Through advanced data visualization and business intelligence techniques, this project identifies key revenue drivers and opportunities for strategic optimization.
+This project analyzes Amazon-style ecommerce sales performance from **2020–2024** using **Power BI + DAX time intelligence**.  
+It delivers both an executive KPI view and a deep-dive into category & product performance to support better business decisions.
 
-**Analysis Period**: Q1 2020 – Q4 2024  
-**Role**: Business Data Analyst  
-**Focus**: Revenue optimization, trend forecasting, category performance analysis
-
----
-
-## 🎯 Business Problem Statement
-
-In the competitive e-commerce landscape, understanding revenue dynamics is essential for sustainable growth and market positioning. This analysis addresses critical business questions:
-
-### Key Business Questions
-- **Revenue Trajectory**: How has overall revenue performed quarter-over-quarter and year-over-year?
-- **Category Performance**: Which product categories are revenue champions vs. underperformers?
-- **Growth Patterns**: Where are growth accelerations, slowdowns, or concerning volatility occurring?
-- **Seasonal Trends**: What cyclical patterns exist that can inform inventory and marketing strategies?
-- **Risk Identification**: Which quarters or categories show declining performance requiring intervention?
-
-### Business Impact
-Understanding these patterns enables:
-- Strategic resource allocation across product categories
-- Proactive identification of revenue risks
-- Data-driven forecasting for inventory and demand planning
-- Optimized marketing spend based on category performance
-- Early warning system for market shifts
+<table>
+<tr>
+<td><b>Role</b></td>
+<td>Data Analyst (Business Intelligence Reporting)</td>
+</tr>
+<tr>
+<td><b>Tools</b></td>
+<td>Power BI, DAX, Python (EDA), Excel</td>
+</tr>
+<tr>
+<td><b>Focus</b></td>
+<td>Revenue trends, YoY growth, category contribution, demand analysis</td>
+</tr>
+</table>
 
 ---
 
-## 📂 Dataset Information
+## 🎯 Business Problem
 
-### Dataset Characteristics
-- **Source**: Simulated Amazon sales data reflecting realistic e-commerce patterns
-- **Time Span**: January 2020 – December 2024 (5 years)
-- **Granularity**: Quarterly aggregation with drill-down to monthly details
-- **Records**: [Add number of transactions/records]
+Raw sales/revenue datasets are difficult to interpret for decision-makers.  
+Stakeholders require a consolidated dashboard to:
 
-### Data Schema
-| Field | Description | Data Type |
-|-------|-------------|-----------|
-| **Order Date** | Transaction timestamp | DateTime |
-| **Revenue** | Sale amount in USD | Decimal |
-| **Category** | Product category classification | String |
-| **Product** | Individual product identifier | String |
-| **Quarter** | Fiscal quarter (Q1-Q4) | String |
-| **Year** | Fiscal year | Integer |
-
-### Data Quality Notes
-- No missing values in critical fields
-- Currency standardized to USD
-- Outliers reviewed and validated
-- Consistent category classification throughout period
-
----
-
-## 🛠️ Tools & Technologies
-
-### Primary Tools
-```
-Power BI Desktop
-├── DAX (Data Analysis Expressions) for calculated metrics
-├── Power Query for data transformation
-├── Custom visualizations and KPI cards
-└── Interactive drill-through capabilities
-
-Python
-├── Pandas for data manipulation and cleaning
-├── Exploratory Data Analysis (EDA)
-├── Data preprocessing and validation
-└── Statistical analysis and profiling
-```
-
-### Key Technical Components
-- **DAX Measures**: YoY Growth %, QoQ Growth %, Revenue Contribution %
-- **Time Intelligence**: Date tables, quarter calculations, year comparisons
-- **Conditional Formatting**: Dynamic visual cues for performance thresholds
-- **Interactive Filters**: Year, quarter, category slicers for exploratory analysis
+<table>
+<tr>
+<td>✅</td>
+<td>Track revenue performance over time (year & quarter)</td>
+</tr>
+<tr>
+<td>✅</td>
+<td>Compare current performance vs previous year (PY)</td>
+</tr>
+<tr>
+<td>✅</td>
+<td>Identify high-performing categories and top-demand products</td>
+</tr>
+<tr>
+<td>✅</td>
+<td>Detect category growth volatility and seasonality patterns</td>
+</tr>
+<tr>
+<td>✅</td>
+<td>Support marketing and inventory planning</td>
+</tr>
+</table>
 
 ---
 
-## 📊 Key Metrics & KPIs
+## 📂 Dataset Summary
 
-### Primary Performance Indicators
-
-**Total Revenue**: **$91.83M**  
-*Aggregate revenue across entire analysis period*
-
-**Year-over-Year Growth**: **+25%**  
-*Average annual growth rate demonstrating strong performance trajectory*
-
-**Quarter-over-Quarter Volatility**: **[Add if calculated]**  
-*Measure of revenue stability across quarters*
-
-### Supporting Metrics
-- Revenue per Category
-- Category Contribution % to Total Revenue
-- Quarterly Growth Rate (QoQ %)
-- Seasonal Index by Quarter
-- Revenue Growth Momentum Score
+| Attribute | Description |
+|-----------|-------------|
+| **Type** | Simulated ecommerce dataset (Amazon-style) |
+| **Time Period** | **2020 to 2024** |
+| **Granularity** | Quarterly + Category + Product |
+| **Key Fields** | Year, Quarter, Revenue, Category, Product, CustomerID |
 
 ---
 
-## 🔍 Comprehensive Analysis & Insights
+## 📊 Key KPIs (Dashboard Metrics)
 
-### 1️⃣ Overall Revenue Performance
+<div align="center">
 
-**Multi-Year Trend Analysis**
-- **2020**: Baseline year establishing foundation at [X]M
-- **2021**: Growth acceleration phase with [Y]% increase
-- **2022**: [Describe trend - continued growth/stabilization]
-- **2023**: [Describe notable patterns]
-- **2024**: [Current year performance]
+| Metric | Value |
+|:------:|:-----:|
+| 💰 **Total Revenue (2020–2024)** | **$91.83M** |
+| 📈 **Previous Year Revenue (PY)** | **$73.66M** |
+| 🚀 **YoY Growth** | **25%** |
+| ⭐ **Top Product Revenue Range** | **~$0.30M–$0.34M per product** |
 
-**Key Observations**
-- Revenue demonstrates overall upward trajectory with 25% YoY growth
-- Quarterly fluctuations indicate seasonal demand patterns
-- Periods of volatility align with external market factors (potential COVID impact in 2020-2021)
-- Revenue stability improved in latter years, suggesting business maturation
-
-### 2️⃣ Category Performance Deep Dive
-
-**Top Performing Categories**
-
-📱 **Electronics**
-- Consistent revenue leader across all quarters
-- Contributes approximately [X]% to total revenue
-- Shows strong Q4 seasonal peaks (holiday shopping)
-- Growth rate: [Add specific %]
-
-🏠 **Home & Kitchen**
-- Second highest revenue contributor
-- Steady performance with less volatility than Electronics
-- Revenue share: [X]%
-- Notable growth periods: [Identify quarters]
-
-**Other Category Insights**
-- [Category 3]: Shows emerging growth potential with [X]% increase in recent quarters
-- [Category 4]: Declining trend requiring strategic attention
-- Seasonal categories show predictable quarterly patterns
-
-**Category Contribution Analysis**
-```
-Electronics:       [X]% of total revenue
-Home & Kitchen:    [Y]% of total revenue
-[Other categories]: [Z]% combined
-```
-
-### 3️⃣ Growth Dynamics & Trends
-
-**Year-over-Year Growth Patterns**
-- **2021 vs 2020**: [X]% growth - [Explain drivers]
-- **2022 vs 2021**: [Y]% growth - [Explain changes]
-- **2023 vs 2022**: [Z]% growth - [Note trends]
-- **2024 vs 2023**: [Current growth rate]
-
-**Quarter-over-Quarter Volatility**
-- Q1: Typically slower post-holiday period
-- Q2: Recovery phase with [characteristic pattern]
-- Q3: [Describe seasonal behavior]
-- Q4: Peak season with [X]% average increase over Q3
-
-**Critical Findings**
-- YoY growth fluctuates by quarter, indicating sensitivity to market conditions
-- Highest growth quarters: [List specific Q/Year combinations]
-- Slowdown periods identified in [specific quarters] requiring investigation
-- Growth momentum suggests [positive/cautious/concerning] outlook
-
-### 4️⃣ Seasonal & Cyclical Patterns
-
-**Identified Patterns**
-- Strong Q4 performance driven by holiday shopping (November-December)
-- Q1 revenue dips consistent with post-holiday consumer behavior
-- Mid-year stability in Q2-Q3 across most categories
-- Electronics category shows pronounced seasonality vs. consistent Home & Kitchen demand
+</div>
 
 ---
 
-## 💡 Strategic Business Recommendations
+## 🛠️ Tools & Techniques Used
 
-### 🎯 Immediate Actions (Next Quarter)
+### 🔧 BI Development
+- **Power Query** for data cleaning, formatting, transformation
+- **Data Modeling** with DateTable to enable time-intelligence calculations
+- **KPI Cards + Trend visuals + Slicers** for interactive reporting
 
-**1. Optimize High-Performing Categories**
-- **Action**: Increase inventory and marketing spend for Electronics and Home & Kitchen during Q4
-- **Expected Impact**: Capture additional 5-10% revenue during peak season
-- **Investment Priority**: High
-
-**2. Address Growth Slowdowns**
-- **Action**: Investigate declining categories with targeted analysis
-- **Focus Areas**: Customer feedback, competitive positioning, pricing strategy
-- **Timeline**: Complete within 30 days
-
-**3. Enhance Forecasting Accuracy**
-- **Action**: Use established seasonal patterns for next-quarter demand planning
-- **Tools**: Implement rolling forecasts based on 5-year trend data
-- **Benefit**: Reduce stockouts and overstock by 15-20%
-
-### 📊 Short-Term Initiatives (3-6 Months)
-
-**4. Category Diversification Strategy**
-- Reduce revenue concentration risk by developing underperforming categories
-- Test new product lines in high-growth segments
-- Target: Increase non-top-2 category contribution from [X]% to [Y]%
-
-**5. Promotional Calendar Optimization**
-- Align promotional campaigns with identified seasonal peaks
-- Develop off-season engagement strategies for Q1 revenue lift
-- A/B test promotional intensity in different categories
-
-**6. Customer Segmentation by Category**
-- Analyze customer behavior patterns within high-revenue categories
-- Develop category-specific retention strategies
-- Implement cross-selling initiatives between complementary categories
-
-### 🚀 Long-Term Strategic Initiatives (6-12 Months)
-
-**7. Advanced Predictive Analytics**
-- Build forecasting models incorporating external factors (market trends, economic indicators)
-- Develop real-time revenue dashboards for executive monitoring
-- Implement automated alerts for growth anomalies
-
-**8. Market Expansion Opportunities**
-- Leverage insights from high-performing categories for market expansion
-- Identify geographic or demographic segments with untapped potential
-- Pilot test new categories showing early growth signals
-
-**9. Revenue Optimization Framework**
-- Establish quarterly revenue review process using this analysis as template
-- Create category manager KPIs tied to growth targets
-- Develop data-driven pricing strategies based on revenue patterns
+### 📐 DAX / Time Intelligence
+- Total Revenue
+- Previous Year Revenue (PY)
+- YoY Growth %
+- Segment-based breakdown (Category/Product visuals)
 
 ---
 
 ## 🖼️ Dashboard Preview
 
-### Revenue Performance Overview Dashboard
-*Executive summary featuring total revenue, YoY growth, and quarterly trend analysis*
+### 1️⃣ Executive Summary: Revenue Trend & YoY Growth
+
+<div align="center">
 
 ![Revenue Overview Dashboard](https://github.com/sangamesh-Analytics/amazon-revenue-performance-analysis/blob/main/amazon-revenuee-performance-analysis/screenshots/Ap1.png)
 
-**Key Features**:
-- Total revenue KPI card with YoY comparison
-- Quarterly revenue trend line (2020-2024)
-- Year-over-year growth percentage visualization
-- Interactive date range filters
+</div>
+
+**Features:**
+- 💰 Total Revenue KPI
+- 📊 Total Revenue PY KPI
+- 📈 YoY Growth %
+- 📉 Quarterly revenue trend (2020–2024)
 
 ---
 
-### Category Analysis & Growth Dashboard
-*Deep-dive into category performance with comparative analysis and growth metrics*
+### 2️⃣ Deep Dive: Category & Product Performance
 
-![Category & Growth Analysis Dashboard](https://github.com/sangamesh-Analytics/amazon-revenue-performance-analysis/blob/main/amazon-revenuee-performance-analysis/screenshots/Ap2.png)
+<div align="center">
 
-**Key Features**:
-- Revenue by category bar chart
-- Category contribution pie chart
-- Quarter-over-quarter growth trends by category
-- Interactive category filters for drill-down analysis
+![Category & Growth Dashboard](https://github.com/sangamesh-Analytics/amazon-revenue-performance-analysis/blob/main/amazon-revenuee-performance-analysis/screenshots/Ap2.png)
+
+</div>
+
+**Features:**
+- 🏷️ Quarterly category contribution analysis
+- 🌟 Top demand products (revenue-based ranking)
+- 📊 YoY Growth trend by category
+- 🎯 Category slicer for drill exploration
+
+---
+
+## 🔍 Key Insights (Business Ready)
+
+> 💡 **Seasonality & Planning**  
+> Quarterly revenue trends indicate **seasonality patterns**, enabling improved planning for peak vs non-peak demand periods.
+
+> 📈 **Growth Acceleration**  
+> YoY Growth (%) provides deeper performance visibility than revenue alone — highlighting **growth acceleration vs slowdown**.
+
+> ⚠️ **Revenue Concentration Risk**  
+> Category contribution analysis highlights **revenue concentration risk** where few categories dominate total performance.
+
+> ⭐ **Product Prioritization**  
+> Product-level analysis identifies **top-demand products** driving a large portion of revenue, supporting prioritization in inventory and promotions.
+
+---
+
+## 💡 Recommendations
+
+| Priority | Recommendation |
+|:--------:|----------------|
+| 🎯 **High** | Focus marketing + inventory investment toward consistent high-performing categories during peak quarters. |
+| ⭐ **High** | Prioritize top-demand products (revenue range: **~$0.30M–$0.34M**) for promotion, bundling, and supply optimization. |
+| 📊 **Medium** | Track categories with volatile YoY trends to plan pricing strategy and promotional timing. |
+| 💰 **Future** | Extend dashboard using profitability KPIs (Cost, Profit, Margin) for stronger decision-making. |
+
+---
+
+## 🧠 DAX Measures Used (Core KPIs)
+
+<details>
+<summary><b>Click to expand DAX code</b></summary>
+
+```DAX
+Total Revenue = SUM(Amazon[Revenue])
+
+Total Revenue PY =
+CALCULATE(
+    [Total Revenue],
+    SAMEPERIODLASTYEAR('DateTable'[Date])
+)
+
+YoY Growth % =
+DIVIDE(
+    [Total Revenue] - [Total Revenue PY],
+    [Total Revenue PY],
+    0
+)
+```
+
+</details>
 
 ---
 
 ## 📁 Project Structure
 
 ```
-amazon-revenue-analysis/
+amazon-revenue-performance-analysis/
 │
-├── data/
-│   ├── amazon_sales_data.csv
-│   └── data_dictionary.md
+├── 📂 data/
+│   └── amazon_sales_data.csv
 │
-├── dashboards/
-│   └── amazon.pbix (Power BI file)
+├── 📂 dashboard/
+│   └── Amazon_Revenue_Performance.pbix
 │
-├── screenshots/
-│   ├── AP1.png (Revenue Overview)
-│   └── AP2.png (Category Analysis)
+├── 📂 screenshots/
+│   ├── Ap1.png
+│   └── Ap2.png
 │
-├── documentation/
-│   ├── dax_measures.md
-│   ├── insights_summary.pdf
-│   └── methodology.md
-│
-└── README.md
+└── 📄 README.md
 ```
 
 ---
 
-## ▶️ Getting Started
+## ✨ Future Enhancements
 
-### Prerequisites
-- **Power BI Desktop** (Version 2.0 or later) - [Download here](https://powerbi.microsoft.com/desktop/)
-- **Python 3.x** (with pandas library for viewing/analyzing source data)
-- Basic understanding of business metrics (revenue, growth rates)
-
-### Installation & Usage
-
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/yourusername/amazon-revenue-analysis.git
-   cd amazon-revenue-analysis
-   ```
-
-2. **Open the Dashboard**
-   - Navigate to `dashboards/` folder
-   - Double-click `amazon.pbix` to open in Power BI Desktop
-
-3. **Explore the Analysis**
-   - Use the interactive filters (Year, Quarter, Category) to drill down
-   - Hover over visualizations for detailed tooltips
-   - Click on data points for cross-filtering across visuals
-
-4. **Refresh Data** (Optional)
-   - If you update the source CSV: Home → Refresh
-   - Power BI will reload and recalculate all metrics
-
-### Dashboard Navigation Tips
-- Start with the **Revenue Overview** page for executive summary
-- Navigate to **Category Analysis** for detailed breakdowns
-- Use the **Reset** button to clear all filters
-- Export visuals using the "..." menu on any chart
+<table>
+<tr>
+<td>💰</td>
+<td><b>Profitability Analysis</b></td>
+<td>Add Profit, Cost & Margin KPIs (profitability-focused analysis)</td>
+</tr>
+<tr>
+<td>👥</td>
+<td><b>Customer Segmentation</b></td>
+<td>Customer segmentation (repeat vs new customers)</td>
+</tr>
+<tr>
+<td>🔮</td>
+<td><b>Revenue Forecasting</b></td>
+<td>Forecasting for revenue prediction using time-series models</td>
+</tr>
+<tr>
+<td>🌍</td>
+<td><b>Geographic Analysis</b></td>
+<td>Region/market-based analysis (if geography field is available)</td>
+</tr>
+</table>
 
 ---
 
-## 📖 Methodology
+## 👤 Author
 
-### Data Preparation Process
+<div align="center">
 
-**1. Exploratory Data Analysis (Python)**
-- Conducted initial EDA using pandas for data profiling
-- Statistical analysis of revenue distributions and patterns
-- Data quality checks and validation
-- Outlier detection and treatment
+**Sangamesh Dadge**
 
-**2. Data Transformation**
-- Created Date dimension table for time intelligence
-- Generated calculated columns: Quarter, Year, Month Name
-- Established relationships between fact and dimension tables
+[![Email](https://img.shields.io/badge/Email-sangameshdadge2003%40gmail.com-red?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sangameshdadge2003@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/sangamesh-dadge-736050251/)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-black?style=for-the-badge&logo=github)](https://github.com/sangamesh-Analytics)
 
-**3. Metric Development**
-```dax
-Total Revenue = SUM('Sales'[Revenue])
-
-YoY Growth % = 
-DIVIDE(
-    [Total Revenue] - CALCULATE([Total Revenue], SAMEPERIODLASTYEAR('Date'[Date])),
-    CALCULATE([Total Revenue], SAMEPERIODLASTYEAR('Date'[Date])),
-    0
-)
-
-QoQ Growth % = 
-DIVIDE(
-    [Total Revenue] - CALCULATE([Total Revenue], DATEADD('Date'[Date], -1, QUARTER)),
-    CALCULATE([Total Revenue], DATEADD('Date'[Date], -1, QUARTER)),
-    0
-)
-
-Category Contribution % = 
-DIVIDE(
-    [Total Revenue],
-    CALCULATE([Total Revenue], ALL('Sales'[Category])),
-    0
-)
-```
-
-### Analysis Framework
-
-**Step 1: Trend Identification**
-- Time series analysis of quarterly revenue
-- Pattern recognition for seasonal effects
-- Anomaly detection for unusual fluctuations
-
-**Step 2: Comparative Analysis**
-- Year-over-year comparisons across all quarters
-- Category benchmarking against total revenue
-- Growth rate variance analysis
-
-**Step 3: Insight Generation**
-- Statistical correlation between categories and time periods
-- Root cause analysis for performance variations
-- Predictive pattern identification
-
----
-
-## 📊 Key Takeaways
-
-### Business Value Delivered
-
-✅ **Comprehensive Revenue Understanding**: Complete visibility into 5-year performance trends
-
-✅ **Category Strategy Insights**: Data-driven identification of high-value product categories
-
-✅ **Growth Monitoring Framework**: Early warning system for revenue slowdowns
-
-✅ **Seasonal Intelligence**: Actionable patterns for demand and inventory planning
-
-✅ **Executive Decision Support**: Clear, interactive dashboards for strategic planning
-
-### Skills Demonstrated
-
-- **Business Analytics**: Revenue analysis, trend identification, KPI development
-- **Data Visualization**: Creating executive-level dashboards with Power BI
-- **Python & EDA**: Data exploration, cleaning, and preprocessing with pandas
-- **DAX Proficiency**: Complex time intelligence and growth calculations
-- **Business Acumen**: Translating data into strategic recommendations
-- **Storytelling**: Presenting complex data in accessible, actionable format
-
----
-
-## 🎓 Lessons Learned
-
-### Technical Insights
-- Importance of proper date tables for time intelligence functions
-- Value of calculated measures vs. calculated columns for performance
-- Power of interactive filters for exploratory analysis
-
-### Business Insights
-- Seasonal patterns are strong predictors of future performance
-- Category diversification reduces overall revenue risk
-- Early identification of trend changes enables proactive management
-
-### Future Enhancements
-- Integrate external data (market trends, competitor analysis)
-- Add predictive forecasting models
-- Incorporate customer segmentation analysis
-- Develop mobile-optimized dashboard version
-
----
-
-## 🔗 Connect & Collaborate
-
-**Sangamesh Dadge**  
-📧 Email: sangameshdadge2003@gmail.com  
-💼 LinkedIn: https://www.linkedin.com/in/sangamesh-dadge-736050251/ 
-🐙 GitHub: sangamesh-Analytics
-📊 Portfolio: [Your Portfolio Website]
-
-**Interested in discussing this project or potential opportunities?** I'm always open to conversations about data analytics, business intelligence, and data-driven decision-making.
-
----
-
-## 📝 License
-
-This project is available for educational and portfolio purposes. Feel free to reference the methodology, but please provide appropriate attribution.
-
----
-
-## 🙏 Acknowledgments
-
-- **Dataset**: Simulated data reflecting realistic e-commerce patterns
-- **Tools**: Microsoft Power BI Desktop, Python (pandas)
-- **Inspiration**: Real-world business analytics challenges in e-commerce
-
----
-
-## 📌 Version History
-
-- **v1.0** (Current) - Initial analysis covering 2020-2024
-- Future updates will incorporate additional years and enhanced analytics
+</div>
 
 ---
 
 <div align="center">
 
-**⭐ If this analysis provided valuable insights, please consider starring this repository!**
+### ⭐ Star this repository if you found it useful!
 
-*Transforming data into decisions, one dashboard at a time.*
+**Turning raw data into business decisions — one dashboard at a time.**
+
+[![Made with Power BI](https://img.shields.io/badge/Made%20with-Power%20BI-F2C811?style=flat-square&logo=powerbi&logoColor=black)](https://powerbi.microsoft.com/)
+[![Built with DAX](https://img.shields.io/badge/Built%20with-DAX-blue?style=flat-square)](https://dax.guide/)
 
 ---
 
-**Last Updated**: January 2026
+*© 2025 Sangamesh Dadge. All rights reserved.*
 
 </div>

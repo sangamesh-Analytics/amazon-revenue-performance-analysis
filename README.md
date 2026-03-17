@@ -156,7 +156,7 @@ amazon-revenue-analysis/
 
 ### Dashboard Preview
 
-![Executive Summary](screenshots/dashboard_executive.png)
+![Executive Summary](https://github.com/sangamesh-Analytics/amazon-revenue-performance-analysis/blob/main/amazon-revenuee-performance-analysis/AP3.png)
 ![Category & Product](screenshots/dashboard_category.png)
 
 ---

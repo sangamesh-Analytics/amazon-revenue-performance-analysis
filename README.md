@@ -98,27 +98,18 @@ The dataset contains **100,000 transaction records** representing an Amazon-styl
 amazon-revenue-analysis/
 │
 ├── data/
-│   └── amazon_sales_data.csv
-│
-├── phase_1_powerbi/
-│   └── Amazon_Revenue_Performance.pbix
-│
-├── phase_2_eda/
-│   └── python_eda.ipynb
-│
-├── phase_3_forecasting/
-│   └── forecasting_model.py
+│   └── E-commerce(amazon)_dataset.csv
 │
 ├── sql/
 │   └── business_queries.sql
 │
 ├── screenshots/
-│   ├── dashboard_executive.png
-│   ├── dashboard_category.png
-│   └── dashboard_forecast.png
+│   ├── AP1.png
+│   ├── AP2.png
+│   └── AP3.png
+├── python/ analysis.py
 │
-├── README.md
-└── requirements.txt
+└── README.md
 ```
 
 ---
@@ -156,8 +147,8 @@ amazon-revenue-analysis/
 
 ### Dashboard Preview
 
-![Executive Summary](https://github.com/sangamesh-Analytics/amazon-revenue-performance-analysis/blob/main/amazon-revenuee-performance-analysis/AP1U.png)
-![Category & Product](https://github.com/sangamesh-Analytics/amazon-revenue-performance-analysis/blob/main/amazon-revenuee-performance-analysis/Ap2.png)
+![Executive Summary](https://github.com/sangamesh-Analytics/amazon-revenue-performance-analysis/blob/main/amazon-revenuee-performance-analysis/screenshots/AP1U.png)
+![Category & Product](https://github.com/sangamesh-Analytics/amazon-revenue-performance-analysis/blob/main/amazon-revenuee-performance-analysis/screenshots/Ap2.png)
 
 ---
 
@@ -322,7 +313,7 @@ Three updated dashboard views were built to incorporate forecast results:
 
 ### Dashboard Preview
 
-![Forecast Dashboard](https://github.com/sangamesh-Analytics/amazon-revenue-performance-analysis/blob/main/amazon-revenuee-performance-analysis/AP3.png)
+![Forecast Dashboard](https://github.com/sangamesh-Analytics/amazon-revenue-performance-analysis/blob/main/amazon-revenuee-performance-analysis/screenshots/AP3.png)
 
 ---
 

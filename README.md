@@ -1,247 +1,397 @@
-<div align="center">
+# 📦 Amazon E-Commerce Revenue Analysis, Forecasting & Business Intelligence
 
-# 📦 Amazon Revenue Performance Analysis
-### *2020–2024*
+> End-to-end data analysis of an Amazon-style e-commerce dataset (2020–2024) — from exploratory analysis and SQL business querying to predictive forecasting and interactive Power BI dashboards.
 
-![Status](https://img.shields.io/badge/Status-Complete-success)
-![Power BI](https://img.shields.io/badge/Tool-Power%20BI-F2C811?logo=powerbi&logoColor=black)
-![DAX](https://img.shields.io/badge/Skill-DAX-blue)
-![Python](https://img.shields.io/badge/Skill-Python-3776AB?logo=python&logoColor=white)
-![Excel](https://img.shields.io/badge/Skill-Excel-217346?logo=microsoft-excel&logoColor=white)
-
-**Transforming ecommerce revenue data into strategic business insights using Power BI & DAX**
-
-
-</div>
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-Analysis-orange?logo=mysql&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-yellow?logo=powerbi&logoColor=white)
+![DAX](https://img.shields.io/badge/DAX-Time%20Intelligence-red?logo=powerbi&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-ML-green?logo=scikit-learn&logoColor=white)
+![Excel](https://img.shields.io/badge/Excel-Data%20Prep-217346?logo=microsoftexcel&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 
 ---
 
-## 📌 Project Overview
+## 📌 Table of Contents
 
-This project analyzes Amazon-style ecommerce sales performance from **2020–2024** using **Power BI + DAX time intelligence**.  
-It delivers both an executive KPI view and a deep-dive into category & product performance to support better business decisions.
-
-<table>
-<tr>
-<td><b>Role</b></td>
-<td>Data Analyst (Business Intelligence Reporting)</td>
-</tr>
-<tr>
-<td><b>Tools</b></td>
-<td>Power BI, DAX, Python (EDA), Excel</td>
-</tr>
-<tr>
-<td><b>Focus</b></td>
-<td>Revenue trends, YoY growth, category contribution, demand analysis</td>
-</tr>
-</table>
+- [Project Overview](#project-overview)
+- [Project Phases](#project-phases)
+- [Business Objective](#business-objective)
+- [Dataset Description](#dataset-description)
+- [Project Structure](#project-structure)
+- [Phase 1 — Power BI & DAX Dashboard](#phase-1--power-bi--dax-revenue-dashboard)
+- [Phase 2 — Exploratory Data Analysis](#phase-2--exploratory-data-analysis-python)
+- [Phase 2 — SQL Business Analysis](#phase-2--sql-business-analysis)
+- [Phase 3 — Revenue Forecasting](#phase-3--revenue-forecasting-machine-learning)
+- [Phase 3 — Forecasting Dashboard](#phase-3--forecasting-power-bi-dashboard)
+- [Key Business Insights](#key-business-insights)
+- [Recommendations](#recommendations)
+- [Skills Demonstrated](#skills-demonstrated)
+- [Tools & Technologies](#tools--technologies)
+- [Future Improvements](#future-improvements)
 
 ---
 
-## 🎯 Business Problem
+## Project Overview
 
-Raw sales/revenue datasets are difficult to interpret for decision-makers.  
-Stakeholders require a consolidated dashboard to:
+This project is a progressive, end-to-end analysis of Amazon-style e-commerce transaction data spanning 2020–2024. It was built in three phases — starting with a Power BI executive dashboard, extended with Python EDA and SQL business querying, and finally augmented with machine learning forecasting and enhanced BI reporting.
 
-<table>
-<tr>
-<td>✅</td>
-<td>Track revenue performance over time (year & quarter)</td>
-</tr>
-<tr>
-<td>✅</td>
-<td>Compare current performance vs previous year (PY)</td>
-</tr>
-<tr>
-<td>✅</td>
-<td>Identify high-performing categories and top-demand products</td>
-</tr>
-<tr>
-<td>✅</td>
-<td>Detect category growth volatility and seasonality patterns</td>
-</tr>
-<tr>
-<td>✅</td>
-<td>Support marketing and inventory planning</td>
-</tr>
-</table>
+The objective across all phases was the same: transform raw transaction data into actionable business insights that support revenue strategy, inventory planning, and decision making.
+
+| Tool | Purpose |
+|------|---------|
+| **Power BI + DAX** | Executive KPI dashboards & time intelligence |
+| **Python** (Pandas, Matplotlib) | Exploratory data analysis & visualisation |
+| **Scikit-learn** | Predictive revenue forecasting |
+| **SQL** | Business data querying & aggregation |
+| **Excel** | Initial data preparation |
 
 ---
 
-## 📂 Dataset Summary
+## Project Phases
 
-| Attribute | Description |
-|-----------|-------------|
-| **Type** | Simulated ecommerce dataset (Amazon-style) |
-| **Time Period** | **2020 to 2024** |
-| **Granularity** | Quarterly + Category + Product |
-| **Key Fields** | Year, Quarter, Revenue, Category, Product, CustomerID |
+| Phase | Focus | Status |
+|-------|-------|--------|
+| ✅ **Phase 1** | Power BI Executive Dashboard & DAX Time Intelligence | Complete |
+| ✅ **Phase 2** | Python Exploratory Data Analysis & SQL Business Queries | Complete |
+| ✅ **Phase 3** | ML Revenue Forecasting & Enhanced Power BI Dashboards | Complete |
 
 ---
 
-## 📊 Key KPIs (Dashboard Metrics)
+## Business Objective
 
-<div align="center">
+Raw sales and revenue datasets are difficult to interpret for decision-makers. Across all phases, this project was designed to:
+
+- Track revenue performance over time (yearly & quarterly)
+- Compare current performance against previous year (YoY)
+- Identify high-performing categories, brands, and top-demand products
+- Detect category growth volatility and seasonality patterns
+- Analyse customer purchasing behaviour and spending concentration
+- Forecast short-term revenue trends to support forward planning
+- Support marketing, inventory, and business strategy decisions
+
+---
+
+## Dataset Description
+
+The dataset contains **100,000 transaction records** representing an Amazon-style e-commerce platform across **2020–2024**.
+
+| Column | Description |
+|--------|-------------|
+| `OrderID` | Unique order identifier |
+| `OrderDate` | Date of purchase |
+| `CustomerID` | Unique customer identifier |
+| `ProductName` | Purchased product |
+| `Category` | Product category |
+| `Brand` | Product brand |
+| `Quantity` | Number of items ordered |
+| `UnitPrice` | Price per unit |
+| `TotalAmount` | Total transaction value |
+| `Country` | Customer location |
+| `OrderStatus` | Order fulfilment status |
+
+---
+
+## Project Structure
+
+```
+amazon-revenue-analysis/
+│
+├── data/
+│   └── amazon_sales_data.csv
+│
+├── phase_1_powerbi/
+│   └── Amazon_Revenue_Performance.pbix
+│
+├── phase_2_eda/
+│   └── python_eda.ipynb
+│
+├── phase_3_forecasting/
+│   └── forecasting_model.py
+│
+├── sql/
+│   └── business_queries.sql
+│
+├── screenshots/
+│   ├── dashboard_executive.png
+│   ├── dashboard_category.png
+│   └── dashboard_forecast.png
+│
+├── README.md
+└── requirements.txt
+```
+
+---
+
+## Phase 1 — Power BI & DAX Revenue Dashboard
+
+**Role:** Data Analyst (Business Intelligence Reporting)
+**Tools:** Power BI, DAX, Excel
+
+### Key KPIs
 
 | Metric | Value |
-|:------:|:-----:|
-| 💰 **Total Revenue (2020–2024)** | **$91.83M** |
-| 📈 **Previous Year Revenue (PY)** | **$73.66M** |
-| 🚀 **YoY Growth** | **25%** |
-| ⭐ **Top Product Revenue Range** | **~$0.30M–$0.34M per product** |
+|--------|-------|
+| 💰 Total Revenue (2020–2024) | $91.83M |
+| 📈 Previous Year Revenue (PY) | $73.66M |
+| 🚀 YoY Growth | 25% |
+| ⭐ Top Product Revenue Range | ~$0.30M – $0.34M per product |
 
-</div>
+### DAX Measures Built
+- `Total Revenue` — overall revenue aggregation
+- `Previous Year Revenue (PY)` — time intelligence comparison
+- `YoY Growth %` — year-over-year performance tracking
+- Segment-based breakdowns by category and product
 
----
-
-## 🛠️ Tools & Techniques Used
-
-### 🔧 BI Development
-- **Power Query** for data cleaning, formatting, transformation
-- **Data Modeling** with DateTable to enable time-intelligence calculations
-- **KPI Cards + Trend visuals + Slicers** for interactive reporting
-
-### 📐 DAX / Time Intelligence
-- Total Revenue
-- Previous Year Revenue (PY)
-- YoY Growth %
-- Segment-based breakdown (Category/Product visuals)
-
----
-
-## 🖼️ Dashboard Preview
-
-### 1️⃣ Executive Summary: Revenue Trend & YoY Growth
-
-<div align="center">
-
-![Revenue Overview Dashboard](https://github.com/sangamesh-Analytics/amazon-revenue-performance-analysis/blob/main/amazon-revenuee-performance-analysis/screenshots/Ap1.png)
-
-</div>
-
-**Features:**
-- 💰 Total Revenue KPI
-- 📊 Total Revenue PY KPI
+### Dashboard 1 — Executive Summary
+- 💰 Total Revenue & PY Revenue KPI cards
 - 📈 YoY Growth %
 - 📉 Quarterly revenue trend (2020–2024)
 
----
-
-### 2️⃣ Deep Dive: Category & Product Performance
-
-<div align="center">
-
-![Category & Growth Dashboard](https://github.com/sangamesh-Analytics/amazon-revenue-performance-analysis/blob/main/amazon-revenuee-performance-analysis/screenshots/Ap2.png)
-
-</div>
-
-**Features:**
+### Dashboard 2 — Category & Product Deep Dive
 - 🏷️ Quarterly category contribution analysis
-- 🌟 Top demand products (revenue-based ranking)
+- 🌟 Top demand products ranked by revenue
 - 📊 YoY Growth trend by category
-- 🎯 Category slicer for drill exploration
+- 🎯 Category slicer for drill-down exploration
+
+### Dashboard Preview
+
+![Executive Summary](screenshots/dashboard_executive.png)
+![Category & Product](screenshots/dashboard_category.png)
 
 ---
 
-## 🔍 Key Insights (Business Ready)
+## Phase 2 — Exploratory Data Analysis (Python)
 
-> 💡 **Seasonality & Planning**  
-> Quarterly revenue trends indicate **seasonality patterns**, enabling improved planning for peak vs non-peak demand periods.
+**Libraries used:** `Pandas`, `Matplotlib`
 
-> 📈 **Growth Acceleration**  
-> YoY Growth (%) provides deeper performance visibility than revenue alone — highlighting **growth acceleration vs slowdown**.
+### Steps Performed
+1. Data loading and inspection
+2. Data type correction and date conversion
+3. Time-based feature engineering (Year, Quarter)
+4. Revenue aggregation by quarter
+5. Trend visualisation
 
-> ⚠️ **Revenue Concentration Risk**  
-> Category contribution analysis highlights **revenue concentration risk** where few categories dominate total performance.
+```python
+df['Year'] = df['OrderDate'].dt.year
+df['Quarter'] = df['OrderDate'].dt.quarter
 
-> ⭐ **Product Prioritization**  
-> Product-level analysis identifies **top-demand products** driving a large portion of revenue, supporting prioritization in inventory and promotions.
+quarterly_revenue = df.groupby(['Year', 'Quarter'])['TotalAmount'].sum()
+```
+
+### Findings
+- Revenue remained relatively stable across quarters with minor fluctuations
+- Balanced product demand observed across all categories
+- Seasonal patterns reflect moderate quarterly variation in sales performance
 
 ---
 
-## 💡 Recommendations
+## Phase 2 — SQL Business Analysis
+
+### Revenue by Category
+```sql
+SELECT Category,
+       SUM(TotalAmount) AS Revenue
+FROM amazon
+GROUP BY Category
+ORDER BY Revenue DESC;
+```
+> Revenue is distributed evenly across categories, indicating diversified demand.
+
+---
+
+### Order Volume by Category
+```sql
+SELECT Category,
+       COUNT(*) AS Total_Orders
+FROM amazon
+GROUP BY Category;
+```
+> Orders range between **911 – 927 per category**, showing balanced purchasing behaviour.
+
+---
+
+### Average Order Value
+```sql
+SELECT Category,
+       AVG(TotalAmount) AS Avg_Order_Value
+FROM amazon
+GROUP BY Category;
+```
+> Highest AOV: **Clothing (~$927)** | Lowest AOV: **Books (~$911)** — minimal pricing differences across categories.
+
+---
+
+### Revenue by Country
+```sql
+SELECT Country,
+       SUM(TotalAmount) AS Revenue
+FROM amazon
+GROUP BY Country
+ORDER BY Revenue DESC;
+```
+
+| Country | Revenue |
+|---------|---------|
+| 🇺🇸 United States | ~$64M |
+| 🇮🇳 India | ~$13.8M |
+| 🇦🇺 Australia | ~$3.7M |
+
+> The US market dominates revenue contribution.
+
+---
+
+### Top 10 Revenue-Generating Brands
+```sql
+SELECT Brand,
+       SUM(TotalAmount) AS Revenue
+FROM amazon
+GROUP BY Brand
+ORDER BY Revenue DESC
+LIMIT 10;
+```
+
+| Rank | Brand |
+|------|-------|
+| 1 | Coretech |
+| 2 | Kiddofun |
+| 3 | Readmore |
+| 4 | UrbanStyle |
+| 5 | Zenith |
+| 6 | Apex |
+| 7 | Nexpro |
+| 8 | Fitlife |
+| 9 | BrightLux |
+| 10 | HomeEase |
+
+---
+
+### Customer Spending Analysis
+```sql
+SELECT CustomerID,
+       SUM(TotalAmount) AS Total_Spent
+FROM amazon
+GROUP BY CustomerID
+ORDER BY Total_Spent DESC
+LIMIT 10;
+```
+> Top customers show up to ~30% spending difference between ranks, suggesting a **Pareto-like revenue distribution** — a key segment to retain and grow.
+
+---
+
+## Phase 3 — Revenue Forecasting (Machine Learning)
+
+**Model used:** Linear Regression (`Scikit-learn`)
+
+### Feature Engineering
+
+| Feature | Purpose |
+|---------|---------|
+| `Quarter_Index` | Captures overall revenue trend over time |
+| Seasonal Dummies (`Q2`, `Q3`, `Q4`) | Captures quarter-specific seasonality |
+
+> Q1 is treated as the base category.
+
+```python
+from sklearn.linear_model import LinearRegression
+
+model = LinearRegression()
+model.fit(X, y)
+```
+
+### Forecast Result
+Revenue was forecasted for **four future quarters (2025)**. Predicted values showed stable revenue with moderate seasonal variation, consistent with the historical trends identified in Phase 2.
+
+---
+
+## Phase 3 — Forecasting Power BI Dashboard
+
+Three updated dashboard views were built to incorporate forecast results:
+
+### 📈 Revenue Performance Dashboard
+- Quarterly revenue trend (historical)
+- Historical vs forecast revenue comparison
+
+### 🗂️ Category Analysis Dashboard
+- Sales distribution by product category
+- Category performance comparison
+
+### 🔮 Forecast Dashboard
+- Predicted revenue trends for 2025
+- Future business performance outlook
+
+### Dashboard Preview
+
+![Forecast Dashboard](screenshots/dashboard_forecast.png)
+
+---
+
+## Key Business Insights
+
+1. 📦 **Balanced category demand** — Revenue is evenly distributed across product categories, indicating a diversified and resilient product portfolio.
+2. 🌍 **US market dominance** — The United States is the largest revenue market, contributing the majority of total sales (~$64M).
+3. 🏆 **Leading brand** — Coretech leads brand revenue, highlighting strong customer brand preference.
+4. 💰 **Consistent pricing** — Average order value remains uniform across categories, reflecting a standardised pricing strategy.
+5. 👤 **High-value customer concentration** — Revenue shows a Pareto-like distribution among top customers — a critical segment for retention and growth.
+6. 📈 **25% YoY Growth** — Strong year-over-year growth confirms positive revenue momentum across the analysis period.
+7. 🔮 **Stable 2025 forecast** — ML modelling confirms a steady revenue outlook for 2025 with moderate seasonal variation.
+
+---
+
+## Recommendations
 
 | Priority | Recommendation |
-|:--------:|----------------|
-| 🎯 **High** | Focus marketing + inventory investment toward consistent high-performing categories during peak quarters. |
-| ⭐ **High** | Prioritize top-demand products (revenue range: **~$0.30M–$0.34M**) for promotion, bundling, and supply optimization. |
-| 📊 **Medium** | Track categories with volatile YoY trends to plan pricing strategy and promotional timing. |
-| 💰 **Future** | Extend dashboard using profitability KPIs (Cost, Profit, Margin) for stronger decision-making. |
+|----------|---------------|
+| 🎯 High | Focus marketing and inventory investment toward consistent high-performing categories during peak quarters |
+| ⭐ High | Prioritise top-demand products (~$0.30M–$0.34M revenue range) for promotion, bundling, and supply optimisation |
+| 📊 Medium | Monitor categories with volatile YoY trends to refine pricing strategy and promotional timing |
+| 👤 Medium | Develop retention strategies targeting high-value customers identified through Pareto analysis |
+| 💰 Future | Extend analysis with profitability KPIs (Cost, Profit Margin) for stronger strategic decision-making |
 
 ---
 
-## 🧠 DAX Measures Used (Core KPIs)
+## Skills Demonstrated
 
-<details>
-<summary><b>Click to expand DAX code</b></summary>
-
-```DAX
-Total Revenue = SUM(Amazon[Revenue])
-
-Total Revenue PY =
-CALCULATE(
-    [Total Revenue],
-    SAMEPERIODLASTYEAR('DateTable'[Date])
-)
-
-YoY Growth % =
-DIVIDE(
-    [Total Revenue] - [Total Revenue PY],
-    [Total Revenue PY],
-    0
-)
-```
-
-</details>
+- Data Cleaning & Transformation
+- Exploratory Data Analysis
+- Time-based Feature Engineering
+- Revenue Trend & YoY Growth Analysis
+- DAX Time Intelligence (Power BI)
+- Predictive Modelling (Linear Regression)
+- SQL Business Querying & Aggregation
+- Dashboard Design & BI Reporting
+- Data-driven Business Insight Generation
 
 ---
 
-## 📁 Project Structure
+## Tools & Technologies
 
-```
-amazon-revenue-performance-analysis/
-│
-├── 📂 data/
-│   └── amazon_sales_data.csv
-│
-├── 📂 dashboard/
-│   └── Amazon_Revenue_Performance.pbix
-│
-├── 📂 screenshots/
-│   ├── Ap1.png
-│   └── Ap2.png
-│
-└── 📄 README.md
-```
+| Tool | Purpose |
+|------|---------|
+| Python | Data analysis & scripting |
+| Pandas | Data manipulation |
+| Matplotlib | Data visualisation |
+| Scikit-learn | Machine learning / forecasting |
+| SQL | Business queries & aggregations |
+| Power BI | Executive & forecast dashboards |
+| DAX | Time intelligence & KPI measures |
+| Excel | Initial data preparation |
 
 ---
 
-## ✨ Future Enhancements
+## Future Improvements
 
-<table>
-<tr>
-<td>💰</td>
-<td><b>Profitability Analysis</b></td>
-<td>Add Profit, Cost & Margin KPIs (profitability-focused analysis)</td>
-</tr>
-<tr>
-<td>👥</td>
-<td><b>Customer Segmentation</b></td>
-<td>Customer segmentation (repeat vs new customers)</td>
-</tr>
-<tr>
-<td>🔮</td>
-<td><b>Revenue Forecasting</b></td>
-<td>Forecasting for revenue prediction using time-series models</td>
-</tr>
-<tr>
-<td>🌍</td>
-<td><b>Geographic Analysis</b></td>
-<td>Region/market-based analysis (if geography field is available)</td>
-</tr>
-</table>
+- [ ] Customer segmentation (RFM analysis)
+- [ ] Product recommendation systems
+- [ ] Advanced time-series forecasting (ARIMA / Prophet)
+- [ ] Profitability analysis (Cost, Profit, Margin KPIs)
+- [ ] Marketing campaign performance analytics
+- [ ] Geographic / region-based revenue analysis
+- [ ] Customer churn prediction
 
 ---
+
+*Analysis performed on a simulated Amazon-style e-commerce dataset of 100,000 transactions spanning 2020–2024.*
 
 ## 👤 Author
 
@@ -264,8 +414,6 @@ amazon-revenue-performance-analysis/
 
 **Turning raw data into business decisions — one dashboard at a time.**
 
-[![Made with Power BI](https://img.shields.io/badge/Made%20with-Power%20BI-F2C811?style=flat-square&logo=powerbi&logoColor=black)](https://powerbi.microsoft.com/)
-[![Built with DAX](https://img.shields.io/badge/Built%20with-DAX-blue?style=flat-square)](https://dax.guide/)
 
 ---
 

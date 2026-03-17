@@ -156,8 +156,8 @@ amazon-revenue-analysis/
 
 ### Dashboard Preview
 
-![Executive Summary](https://github.com/sangamesh-Analytics/amazon-revenue-performance-analysis/blob/main/amazon-revenuee-performance-analysis/AP3.png)
-![Category & Product](screenshots/dashboard_category.png)
+![Executive Summary](https://github.com/sangamesh-Analytics/amazon-revenue-performance-analysis/blob/main/amazon-revenuee-performance-analysis/AP1U.png)
+![Category & Product](https://github.com/sangamesh-Analytics/amazon-revenue-performance-analysis/blob/main/amazon-revenuee-performance-analysis/Ap2.png)
 
 ---
 
@@ -322,7 +322,7 @@ Three updated dashboard views were built to incorporate forecast results:
 
 ### Dashboard Preview
 
-![Forecast Dashboard](screenshots/dashboard_forecast.png)
+![Forecast Dashboard](https://github.com/sangamesh-Analytics/amazon-revenue-performance-analysis/blob/main/amazon-revenuee-performance-analysis/AP3.png)
 
 ---
 

@@ -1,4 +1,4 @@
-# 📦 Amazon E-Commerce Revenue Analysis, Forecasting & Business Intelligence
+# 📦 E-Commerce Revenue Analysis, Forecasting & Business Intelligence (Amazon-Style Dataset)
 
 > End-to-end data analysis of an Amazon-style e-commerce dataset (2020–2024) — from exploratory analysis and SQL business querying to predictive forecasting and interactive Power BI dashboards.
 
